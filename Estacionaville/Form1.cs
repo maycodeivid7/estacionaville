@@ -6,5 +6,15 @@ namespace Estacionaville
         {
             InitializeComponent();
         }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnVaga1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
