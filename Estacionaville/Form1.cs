@@ -12,6 +12,20 @@ namespace Estacionaville
 
         }
 
+        private void AtualizarCorBotao(Button btn, bool ocupada)
+        {
+            if (ocupada)
+            {
+                btn.BackColor = Color.Red;
+                btn.ForeColor = Color.White;
+            }
+            else
+            {
+                btn.BackColor = Color.Green;
+                btn.ForeColor = Color.White;
+            }
+        }
+
         private void btnVaga1_Click(object sender, EventArgs e)
         {
 
