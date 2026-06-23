@@ -28,18 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
+            txtPlaca = new TextBox();
+            btnSalvar = new Button();
+            btnCancelar = new Button();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(100, 23);
+            label1.TabIndex = 0;
+            label1.Text = "Placa do Veículo:";
+            // 
+            // txtPlaca
+            // 
+            txtPlaca.Location = new Point(118, 6);
+            txtPlaca.Name = "txtPlaca";
+            txtPlaca.Size = new Size(152, 23);
+            txtPlaca.TabIndex = 1;
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.Location = new Point(134, 86);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(75, 23);
+            btnSalvar.TabIndex = 2;
+            btnSalvar.Text = "Confirmar";
+            btnSalvar.UseVisualStyleBackColor = true;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(37, 86);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(75, 23);
+            btnCancelar.TabIndex = 3;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
             // 
             // FormCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(411, 189);
+            Controls.Add(btnCancelar);
+            Controls.Add(btnSalvar);
+            Controls.Add(txtPlaca);
+            Controls.Add(label1);
             Name = "FormCadastro";
             Text = "Cadastro";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox txtPlaca;
+        private Button btnSalvar;
+        private Button btnCancelar;
     }
 }
