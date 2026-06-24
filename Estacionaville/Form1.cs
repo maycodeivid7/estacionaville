@@ -26,104 +26,44 @@ namespace Estacionaville
             }
         }
 
-        private void btnVaga1_Click(object sender, EventArgs e)
+        private void Vaga_Click(object sender, EventArgs e)
         {
+            Button btnClicado = (Button)sender;
 
+            if (btnClicado.BackColor == Color.Red)
+            {
+                if (MessageBox.Show("Deseja liberar a vaga?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    AtualizarCorBotao(btnClicado, false);
+                    btnClicado.Text = btnClicado.Text.Split('\n')[0];
+                }
+            }
+            else
+            {
+                FormCadastro cadastro = new FormCadastro();
+
+                // Se o usuário clicar em "Salvar" no cadastro:
+                if (cadastro.ShowDialog() == DialogResult.OK)
+                {
+                    string placa = cadastro.PlacaDigitada;
+
+                    AtualizarCorBotao(btnClicado, true); // Muda a cor para Red
+                    btnClicado.Text = btnClicado.Text + "\n" + placa; // Atualiza o texto
+                }
+            }
         }
 
-        private void btnVaga2_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnVaga3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga15_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga18_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnVaga20_Click(object sender, EventArgs e)
-        {
-
+            // Percorre todos os controles dentro do FlowLayoutPanel
+            foreach (Control c in flowLayoutPanel1.Controls)
+            {
+                if (c is Button btn)
+                {
+                    // Define todas como verdes ao iniciar
+                    AtualizarCorBotao(btn, false);
+                }
+            }
         }
     }
 }

@@ -51,21 +51,23 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(134, 86);
+            btnSalvar.Location = new Point(103, 53);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(75, 23);
+            btnSalvar.Size = new Size(98, 23);
             btnSalvar.TabIndex = 2;
-            btnSalvar.Text = "Confirmar";
+            btnSalvar.Text = "Ocupar vaga";
             btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(37, 86);
+            btnCancelar.Location = new Point(12, 53);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(75, 23);
             btnCancelar.TabIndex = 3;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // FormCadastro
             // 
