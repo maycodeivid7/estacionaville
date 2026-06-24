@@ -14,6 +14,13 @@ namespace Estacionaville
         public VisualizaDados()
         {
             InitializeComponent();
+
+            // Faz com que as colunas preencham todo o espaço do DataGridView
+            dgVisualizaVagas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            // Se quiser que as linhas sejam criadas automaticamente, já é o padrão:
+            dgVisualizaVagas.AllowUserToAddRows = false;
+            dgVisualizaVagas.ReadOnly = true;
         }
 
         private void VisualizaDados_Load(object sender, EventArgs e)
@@ -27,7 +34,7 @@ namespace Estacionaville
                 using (var conn = Conexao.GetConexao())
                 {
                     conn.Open();
-                    string sql = "SELECT * FROM Vagas";
+                    string sql = "SELECT * FROM Vagas ORDER BY NumeroVaga";
 
                     using (var da = new SQLiteDataAdapter(sql, conn))
                     {

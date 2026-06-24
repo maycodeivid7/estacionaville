@@ -28,20 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            flowLayoutPanel1 = new FlowLayoutPanel();
             dgVisualizaVagas = new DataGridView();
-            flowLayoutPanel1.SuspendLayout();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)dgVisualizaVagas).BeginInit();
+            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
-            // 
-            // flowLayoutPanel1
-            // 
-            flowLayoutPanel1.Controls.Add(dgVisualizaVagas);
-            flowLayoutPanel1.Dock = DockStyle.Fill;
-            flowLayoutPanel1.Location = new Point(0, 0);
-            flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(800, 450);
-            flowLayoutPanel1.TabIndex = 0;
             // 
             // dgVisualizaVagas
             // 
@@ -51,24 +42,26 @@
             dgVisualizaVagas.RowHeadersWidth = 62;
             dgVisualizaVagas.Size = new Size(771, 338);
             dgVisualizaVagas.TabIndex = 0;
+            dgVisualizaVagas.Dock = DockStyle.Fill;
+            // 
             // 
             // VisualizaDados
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(flowLayoutPanel1);
+            Controls.Add(dgVisualizaVagas);
             Name = "VisualizaDados";
             Text = "Visualiza Dados";
             Load += VisualizaDados_Load;
-            flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgVisualizaVagas).EndInit();
+            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private FlowLayoutPanel flowLayoutPanel1;
         private DataGridView dgVisualizaVagas;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
