@@ -64,6 +64,11 @@ namespace Estacionaville
                 // Lógica de liberar
                 if (MessageBox.Show("Deseja liberar a vaga?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
+                    string nomeBotao = btnClicado.Name;
+                    int numVaga = int.Parse(nomeBotao.Replace("btnVaga", ""));
+                    string sql = $"DELETE FROM Vagas WHERE NumeroVaga = {numVaga}";
+                    Conexao.ExecutarComando(sql);
+
                     AtualizarCorBotao(btnClicado, false);
                     // Reseta para o texto original (ex: "Vaga 01")
                     // Certifique-se de que o texto do botão no design comece com "Vaga"
