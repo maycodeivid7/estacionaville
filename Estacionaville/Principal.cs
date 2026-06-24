@@ -48,17 +48,30 @@ namespace Estacionaville
             {
                 // Lógica de ocupar
                 FormCadastro cadastro = new FormCadastro();
+
                 if (cadastro.ShowDialog() == DialogResult.OK)
                 {
-                    // AQUI ESTAVA FALTANDO A LÓGICA DE ATUALIZAÇÃO:
                     string placa = cadastro.PlacaDigitada;
+                    string nomeBotao = btnClicado.Name;
+                    int numVaga = int.Parse(nomeBotao.Replace("btnVaga", ""));
 
-                    // 1. Muda a cor para vermelho
+                    // Usando parâmetros para evitar erros e injeções SQL
+                    string sql = "INSERT OR REPLACE INTO Vagas (NumeroVaga, Placa, Status) VALUES (@num, @placa, 'Ocupada')";
+
+                    using (var conn = Conexao.GetConexao())
+                    {
+                        conn.Open();
+                        using (var cmd = new System.Data.SQLite.SQLiteCommand(sql, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@num", numVaga);
+                            cmd.Parameters.AddWithValue("@placa", placa);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+
+                    // Atualiza a UI
                     AtualizarCorBotao(btnClicado, true);
-
-                    // 2. Atualiza o texto: "Vaga X" + a placa
-                    string numeroVaga = btnClicado.Text.Split('\n')[0];
-                    btnClicado.Text = numeroVaga + "\n" + placa;
+                    btnClicado.Text = $"Vaga {numVaga:D2}\n{placa}";
                 }
             }
         }

@@ -25,10 +25,10 @@ namespace Estacionaville
                 conn.Open();
                 string sql = @"CREATE TABLE IF NOT EXISTS Vagas (
                                 Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                                NumeroVaga INTEGER,
+                                NumeroVaga INTEGER UNIQUE,
                                 Placa TEXT,
                                 Status TEXT
-                              )";
+                             )";
                 using (var cmd = new SQLiteCommand(sql, conn))
                 {
                     cmd.ExecuteNonQuery();
