@@ -63,7 +63,7 @@ namespace Estacionaville
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Principal_Load(object sender, EventArgs e)
         {
             // Percorre todos os controles dentro do FlowLayoutPanel
             foreach (Control c in flowLayoutPanel1.Controls)
@@ -75,6 +75,12 @@ namespace Estacionaville
                 }
             }
 
+        }
+
+        private void btnVisualizaDados_Click(object sender, EventArgs e)
+        {
+            VisualizaDados visualiza_dados = new VisualizaDados();
+            visualiza_dados.ShowDialog();
         }
     }
 }
