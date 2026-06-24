@@ -1,4 +1,5 @@
 using System.Data.SQLite;
+using System.Linq;
 
 namespace Estacionaville
 {
@@ -25,6 +26,32 @@ namespace Estacionaville
             {
                 btn.BackColor = Color.Green;
                 btn.ForeColor = Color.White;
+            }
+        }
+
+        private void CarregarVagasDoBanco()
+        {
+            using (var conn = Conexao.GetConexao())
+            {
+                conn.Open();
+                string sql = "SELECT NumeroVaga, Placa FROM Vagas WHERE Status = 'Ocupada'";
+                using (var cmd = new SQLiteCommand(sql, conn))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        int numVaga = reader.GetInt32(0);
+                        string placa = reader.GetString(1);
+
+                        // Procura o botão correspondente no Form1
+                        Button btn = this.Controls.Find("btnVaga" + numVaga, true).FirstOrDefault() as Button;
+                        if (btn != null)
+                        {
+                            AtualizarCorBotao(btn, true);
+                            btn.Text = "Vaga " + numVaga.ToString("D2") + "\n" + placa;
+                        }
+                    }
+                }
             }
         }
 
@@ -78,16 +105,14 @@ namespace Estacionaville
 
         private void Principal_Load(object sender, EventArgs e)
         {
-            // Percorre todos os controles dentro do FlowLayoutPanel
+            // Define todas como verdes inicialmente
             foreach (Control c in flowLayoutPanel1.Controls)
             {
-                if (c is Button btn)
-                {
-                    // Define todas como verdes ao iniciar
-                    AtualizarCorBotao(btn, false);
-                }
+                if (c is Button btn) AtualizarCorBotao(btn, false);
             }
 
+            // Carrega o estado atual da base de dados
+            CarregarVagasDoBanco();
         }
 
         private void btnVisualizaDados_Click(object sender, EventArgs e)
