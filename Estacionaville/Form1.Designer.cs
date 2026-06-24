@@ -87,9 +87,11 @@
             // 
             // btnVaga1
             // 
-            btnVaga1.Location = new Point(13, 13);
+            btnVaga1.Location = new Point(20, 20);
+            btnVaga1.Margin = new Padding(10);
             btnVaga1.Name = "btnVaga1";
-            btnVaga1.Size = new Size(75, 23);
+            btnVaga1.Padding = new Padding(1);
+            btnVaga1.Size = new Size(100, 80);
             btnVaga1.TabIndex = 0;
             btnVaga1.Text = "Vaga 01";
             btnVaga1.UseVisualStyleBackColor = true;
@@ -97,9 +99,11 @@
             // 
             // btnVaga2
             // 
-            btnVaga2.Location = new Point(94, 13);
+            btnVaga2.Location = new Point(140, 20);
+            btnVaga2.Margin = new Padding(10);
             btnVaga2.Name = "btnVaga2";
-            btnVaga2.Size = new Size(75, 23);
+            btnVaga2.Padding = new Padding(1);
+            btnVaga2.Size = new Size(100, 80);
             btnVaga2.TabIndex = 0;
             btnVaga2.Text = "Vaga 02";
             btnVaga2.UseVisualStyleBackColor = true;
@@ -107,9 +111,11 @@
             // 
             // btnVaga3
             // 
-            btnVaga3.Location = new Point(175, 13);
+            btnVaga3.Location = new Point(260, 20);
+            btnVaga3.Margin = new Padding(10);
             btnVaga3.Name = "btnVaga3";
-            btnVaga3.Size = new Size(75, 23);
+            btnVaga3.Padding = new Padding(1);
+            btnVaga3.Size = new Size(100, 80);
             btnVaga3.TabIndex = 0;
             btnVaga3.Text = "Vaga 03";
             btnVaga3.UseVisualStyleBackColor = true;
@@ -117,9 +123,11 @@
             // 
             // btnVaga4
             // 
-            btnVaga4.Location = new Point(256, 13);
+            btnVaga4.Location = new Point(380, 20);
+            btnVaga4.Margin = new Padding(10);
             btnVaga4.Name = "btnVaga4";
-            btnVaga4.Size = new Size(75, 23);
+            btnVaga4.Padding = new Padding(1);
+            btnVaga4.Size = new Size(100, 80);
             btnVaga4.TabIndex = 0;
             btnVaga4.Text = "Vaga 04";
             btnVaga4.UseVisualStyleBackColor = true;
@@ -127,9 +135,11 @@
             // 
             // btnVaga5
             // 
-            btnVaga5.Location = new Point(337, 13);
+            btnVaga5.Location = new Point(500, 20);
+            btnVaga5.Margin = new Padding(10);
             btnVaga5.Name = "btnVaga5";
-            btnVaga5.Size = new Size(75, 23);
+            btnVaga5.Padding = new Padding(1);
+            btnVaga5.Size = new Size(100, 80);
             btnVaga5.TabIndex = 0;
             btnVaga5.Text = "Vaga 05";
             btnVaga5.UseVisualStyleBackColor = true;
@@ -137,9 +147,11 @@
             // 
             // btnVaga6
             // 
-            btnVaga6.Location = new Point(418, 13);
+            btnVaga6.Location = new Point(620, 20);
+            btnVaga6.Margin = new Padding(10);
             btnVaga6.Name = "btnVaga6";
-            btnVaga6.Size = new Size(75, 23);
+            btnVaga6.Padding = new Padding(1);
+            btnVaga6.Size = new Size(100, 80);
             btnVaga6.TabIndex = 0;
             btnVaga6.Text = "Vaga 06";
             btnVaga6.UseVisualStyleBackColor = true;
@@ -147,9 +159,11 @@
             // 
             // btnVaga7
             // 
-            btnVaga7.Location = new Point(499, 13);
+            btnVaga7.Location = new Point(20, 120);
+            btnVaga7.Margin = new Padding(10);
             btnVaga7.Name = "btnVaga7";
-            btnVaga7.Size = new Size(75, 23);
+            btnVaga7.Padding = new Padding(1);
+            btnVaga7.Size = new Size(100, 80);
             btnVaga7.TabIndex = 0;
             btnVaga7.Text = "Vaga 07";
             btnVaga7.UseVisualStyleBackColor = true;
@@ -157,9 +171,11 @@
             // 
             // btnVaga8
             // 
-            btnVaga8.Location = new Point(580, 13);
+            btnVaga8.Location = new Point(140, 120);
+            btnVaga8.Margin = new Padding(10);
             btnVaga8.Name = "btnVaga8";
-            btnVaga8.Size = new Size(75, 23);
+            btnVaga8.Padding = new Padding(1);
+            btnVaga8.Size = new Size(100, 80);
             btnVaga8.TabIndex = 0;
             btnVaga8.Text = "Vaga 08";
             btnVaga8.UseVisualStyleBackColor = true;
@@ -167,9 +183,11 @@
             // 
             // btnVaga9
             // 
-            btnVaga9.Location = new Point(661, 13);
+            btnVaga9.Location = new Point(260, 120);
+            btnVaga9.Margin = new Padding(10);
             btnVaga9.Name = "btnVaga9";
-            btnVaga9.Size = new Size(75, 23);
+            btnVaga9.Padding = new Padding(1);
+            btnVaga9.Size = new Size(100, 80);
             btnVaga9.TabIndex = 0;
             btnVaga9.Text = "Vaga 09";
             btnVaga9.UseVisualStyleBackColor = true;
@@ -177,9 +195,11 @@
             // 
             // btnVaga10
             // 
-            btnVaga10.Location = new Point(13, 42);
+            btnVaga10.Location = new Point(380, 120);
+            btnVaga10.Margin = new Padding(10);
             btnVaga10.Name = "btnVaga10";
-            btnVaga10.Size = new Size(75, 23);
+            btnVaga10.Padding = new Padding(1);
+            btnVaga10.Size = new Size(100, 80);
             btnVaga10.TabIndex = 0;
             btnVaga10.Text = "Vaga 10";
             btnVaga10.UseVisualStyleBackColor = true;
@@ -187,9 +207,11 @@
             // 
             // btnVaga11
             // 
-            btnVaga11.Location = new Point(94, 42);
+            btnVaga11.Location = new Point(500, 120);
+            btnVaga11.Margin = new Padding(10);
             btnVaga11.Name = "btnVaga11";
-            btnVaga11.Size = new Size(75, 23);
+            btnVaga11.Padding = new Padding(1);
+            btnVaga11.Size = new Size(100, 80);
             btnVaga11.TabIndex = 0;
             btnVaga11.Text = "Vaga 11";
             btnVaga11.UseVisualStyleBackColor = true;
@@ -197,9 +219,11 @@
             // 
             // btnVaga12
             // 
-            btnVaga12.Location = new Point(175, 42);
+            btnVaga12.Location = new Point(620, 120);
+            btnVaga12.Margin = new Padding(10);
             btnVaga12.Name = "btnVaga12";
-            btnVaga12.Size = new Size(75, 23);
+            btnVaga12.Padding = new Padding(1);
+            btnVaga12.Size = new Size(100, 80);
             btnVaga12.TabIndex = 0;
             btnVaga12.Text = "Vaga 12";
             btnVaga12.UseVisualStyleBackColor = true;
@@ -207,9 +231,11 @@
             // 
             // btnVaga13
             // 
-            btnVaga13.Location = new Point(256, 42);
+            btnVaga13.Location = new Point(20, 220);
+            btnVaga13.Margin = new Padding(10);
             btnVaga13.Name = "btnVaga13";
-            btnVaga13.Size = new Size(75, 23);
+            btnVaga13.Padding = new Padding(1);
+            btnVaga13.Size = new Size(100, 80);
             btnVaga13.TabIndex = 0;
             btnVaga13.Text = "Vaga 13";
             btnVaga13.UseVisualStyleBackColor = true;
@@ -217,9 +243,11 @@
             // 
             // btnVaga14
             // 
-            btnVaga14.Location = new Point(337, 42);
+            btnVaga14.Location = new Point(140, 220);
+            btnVaga14.Margin = new Padding(10);
             btnVaga14.Name = "btnVaga14";
-            btnVaga14.Size = new Size(75, 23);
+            btnVaga14.Padding = new Padding(1);
+            btnVaga14.Size = new Size(100, 80);
             btnVaga14.TabIndex = 0;
             btnVaga14.Text = "Vaga 14";
             btnVaga14.UseVisualStyleBackColor = true;
@@ -227,9 +255,11 @@
             // 
             // btnVaga15
             // 
-            btnVaga15.Location = new Point(418, 42);
+            btnVaga15.Location = new Point(260, 220);
+            btnVaga15.Margin = new Padding(10);
             btnVaga15.Name = "btnVaga15";
-            btnVaga15.Size = new Size(75, 23);
+            btnVaga15.Padding = new Padding(1);
+            btnVaga15.Size = new Size(100, 80);
             btnVaga15.TabIndex = 0;
             btnVaga15.Text = "Vaga 15";
             btnVaga15.UseVisualStyleBackColor = true;
@@ -237,9 +267,11 @@
             // 
             // btnVaga16
             // 
-            btnVaga16.Location = new Point(499, 42);
+            btnVaga16.Location = new Point(380, 220);
+            btnVaga16.Margin = new Padding(10);
             btnVaga16.Name = "btnVaga16";
-            btnVaga16.Size = new Size(75, 23);
+            btnVaga16.Padding = new Padding(1);
+            btnVaga16.Size = new Size(100, 80);
             btnVaga16.TabIndex = 0;
             btnVaga16.Text = "Vaga 16";
             btnVaga16.UseVisualStyleBackColor = true;
@@ -247,9 +279,11 @@
             // 
             // btnVaga17
             // 
-            btnVaga17.Location = new Point(580, 42);
+            btnVaga17.Location = new Point(500, 220);
+            btnVaga17.Margin = new Padding(10);
             btnVaga17.Name = "btnVaga17";
-            btnVaga17.Size = new Size(75, 23);
+            btnVaga17.Padding = new Padding(1);
+            btnVaga17.Size = new Size(100, 80);
             btnVaga17.TabIndex = 0;
             btnVaga17.Text = "Vaga 17";
             btnVaga17.UseVisualStyleBackColor = true;
@@ -257,9 +291,11 @@
             // 
             // btnVaga18
             // 
-            btnVaga18.Location = new Point(661, 42);
+            btnVaga18.Location = new Point(620, 220);
+            btnVaga18.Margin = new Padding(10);
             btnVaga18.Name = "btnVaga18";
-            btnVaga18.Size = new Size(75, 23);
+            btnVaga18.Padding = new Padding(1);
+            btnVaga18.Size = new Size(100, 80);
             btnVaga18.TabIndex = 0;
             btnVaga18.Text = "Vaga 18";
             btnVaga18.UseVisualStyleBackColor = true;
@@ -267,9 +303,11 @@
             // 
             // btnVaga19
             // 
-            btnVaga19.Location = new Point(13, 71);
+            btnVaga19.Location = new Point(20, 320);
+            btnVaga19.Margin = new Padding(10);
             btnVaga19.Name = "btnVaga19";
-            btnVaga19.Size = new Size(75, 23);
+            btnVaga19.Padding = new Padding(1);
+            btnVaga19.Size = new Size(100, 80);
             btnVaga19.TabIndex = 0;
             btnVaga19.Text = "Vaga 19";
             btnVaga19.UseVisualStyleBackColor = true;
@@ -277,9 +315,11 @@
             // 
             // btnVaga20
             // 
-            btnVaga20.Location = new Point(94, 71);
+            btnVaga20.Location = new Point(140, 320);
+            btnVaga20.Margin = new Padding(10);
             btnVaga20.Name = "btnVaga20";
-            btnVaga20.Size = new Size(75, 23);
+            btnVaga20.Padding = new Padding(1);
+            btnVaga20.Size = new Size(100, 80);
             btnVaga20.TabIndex = 0;
             btnVaga20.Text = "Vaga 20";
             btnVaga20.UseVisualStyleBackColor = true;

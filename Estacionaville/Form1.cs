@@ -32,23 +32,31 @@ namespace Estacionaville
 
             if (btnClicado.BackColor == Color.Red)
             {
+                // Lógica de liberar
                 if (MessageBox.Show("Deseja liberar a vaga?", "Confirmação", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     AtualizarCorBotao(btnClicado, false);
-                    btnClicado.Text = btnClicado.Text.Split('\n')[0];
+                    // Reseta para o texto original (ex: "Vaga 01")
+                    // Certifique-se de que o texto do botão no design comece com "Vaga"
+                    string numeroVaga = btnClicado.Text.Split('\n')[0];
+                    btnClicado.Text = numeroVaga;
                 }
             }
             else
             {
+                // Lógica de ocupar
                 FormCadastro cadastro = new FormCadastro();
-
-                // Se o usuário clicar em "Salvar" no cadastro:
                 if (cadastro.ShowDialog() == DialogResult.OK)
                 {
+                    // AQUI ESTAVA FALTANDO A LÓGICA DE ATUALIZAÇÃO:
                     string placa = cadastro.PlacaDigitada;
 
-                    AtualizarCorBotao(btnClicado, true); // Muda a cor para Red
-                    btnClicado.Text = btnClicado.Text + "\n" + placa; // Atualiza o texto
+                    // 1. Muda a cor para vermelho
+                    AtualizarCorBotao(btnClicado, true);
+
+                    // 2. Atualiza o texto: "Vaga X" + a placa
+                    string numeroVaga = btnClicado.Text.Split('\n')[0];
+                    btnClicado.Text = numeroVaga + "\n" + placa;
                 }
             }
         }
