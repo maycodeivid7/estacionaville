@@ -19,6 +19,9 @@ namespace Estacionaville
         public FormCadastro()
         {
             InitializeComponent();
+
+            // Força o foco na caixa de texto logo que o form abre
+            this.Shown += (s, e) => txtPlaca.Focus();
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
