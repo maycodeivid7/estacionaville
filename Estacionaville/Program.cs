@@ -14,7 +14,7 @@ namespace Estacionaville
 
             Conexao.InicializarBanco();
 
-            Application.Run(new Form1());
+            Application.Run(new Principal());
         }
     }
 }
