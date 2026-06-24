@@ -36,24 +36,27 @@
             // 
             // label1
             // 
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(17, 15);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(100, 23);
+            label1.Size = new Size(143, 38);
             label1.TabIndex = 0;
             label1.Text = "Placa do Veículo:";
             // 
             // txtPlaca
             // 
-            txtPlaca.Location = new Point(118, 6);
+            txtPlaca.Location = new Point(169, 10);
+            txtPlaca.Margin = new Padding(4, 5, 4, 5);
             txtPlaca.Name = "txtPlaca";
-            txtPlaca.Size = new Size(152, 23);
+            txtPlaca.Size = new Size(215, 31);
             txtPlaca.TabIndex = 1;
             // 
             // btnSalvar
             // 
-            btnSalvar.Location = new Point(103, 53);
+            btnSalvar.Location = new Point(147, 88);
+            btnSalvar.Margin = new Padding(4, 5, 4, 5);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(98, 23);
+            btnSalvar.Size = new Size(140, 38);
             btnSalvar.TabIndex = 2;
             btnSalvar.Text = "Ocupar vaga";
             btnSalvar.UseVisualStyleBackColor = true;
@@ -61,9 +64,10 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(12, 53);
+            btnCancelar.Location = new Point(17, 88);
+            btnCancelar.Margin = new Padding(4, 5, 4, 5);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(75, 23);
+            btnCancelar.Size = new Size(107, 38);
             btnCancelar.TabIndex = 3;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -71,13 +75,15 @@
             // 
             // FormCadastro
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AcceptButton = btnSalvar;
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(411, 189);
+            ClientSize = new Size(587, 315);
             Controls.Add(btnCancelar);
             Controls.Add(btnSalvar);
             Controls.Add(txtPlaca);
             Controls.Add(label1);
+            Margin = new Padding(4, 5, 4, 5);
             Name = "FormCadastro";
             Text = "Cadastro";
             ResumeLayout(false);
