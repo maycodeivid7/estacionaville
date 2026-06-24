@@ -48,5 +48,11 @@ namespace Estacionaville
                 }
             }
         }
+
+        // Abre conexao com o banco de dados
+        public static SQLiteConnection GetConexao()
+        {
+            return new SQLiteConnection(stringConexao);
+        }
     }
 }
