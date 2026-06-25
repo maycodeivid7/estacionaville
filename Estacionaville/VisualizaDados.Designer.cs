@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             dgVisualizaVagas = new DataGridView();
-            flowLayoutPanel1 = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)dgVisualizaVagas).BeginInit();
-            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // dgVisualizaVagas
@@ -55,13 +53,11 @@
             Text = "Visualiza Dados";
             Load += VisualizaDados_Load;
             ((System.ComponentModel.ISupportInitialize)dgVisualizaVagas).EndInit();
-            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private DataGridView dgVisualizaVagas;
-        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

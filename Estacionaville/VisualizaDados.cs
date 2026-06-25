@@ -16,7 +16,7 @@ namespace Estacionaville
             InitializeComponent();
 
             // Faz com que as colunas preencham todo o espaço do DataGridView
-            dgVisualizaVagas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            //dgVisualizaVagas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             // Se quiser que as linhas sejam criadas automaticamente, já é o padrão:
             dgVisualizaVagas.AllowUserToAddRows = false;
